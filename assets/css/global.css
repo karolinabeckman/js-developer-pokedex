@@ -1,24 +1,59 @@
 * {
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
+    color: #454545;
+}
+
+.header-content {
+    margin: 0.5rem;
+    padding: .5rem 0;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.material-symbols-outlined {
+    font-weight: 600;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    margin: .25rem .5rem;
 }
 
 body {
     background-color: #f6f8fc;
+    width: 100%;
+    height: 100%;
 }
 
 .content {
-    width: 100vw;
-    height: 100vh;
+    position: relative;
+    height: 95vh;
+    margin: 1rem auto;
     padding: 1rem;
     background-color: #fff;
+    overflow: hidden;
+}
+
+.content::before {
+    content: "";
+    position: absolute;
+    top: -4.5rem;
+    right: -0.4rem;
+    width: 230px;
+    height: 230px;
+    background-image: url("./../img/Pokeball-PNG-Free-Download.png");
+    background-size: cover;
+    opacity: 0.05;
 }
 
 @media screen and (min-width: 992px) {
     .content {
         max-width: 992px;
-        height: auto;
-        margin: 1rem auto;
         border-radius: 1rem;
     }
 }

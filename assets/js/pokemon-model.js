@@ -5,4 +5,13 @@ class Pokemon {
     type;
     types = [];
     photo;
+
+    species;
+    height;
+    weight;
+    abilities = [];
+
+    gender;
+    egg_groups = [];
+    egg_cycle
 }
